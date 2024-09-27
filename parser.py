@@ -1,5 +1,6 @@
 from scraper import RecipeScraper
 
+# Constant variables
 main_url = "https://kulinaria.ge"
 my_category = "თევზი და ზღვის პროდუქტები"
 
