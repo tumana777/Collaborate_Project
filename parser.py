@@ -11,7 +11,3 @@ scraper.scrape_recipes()
 
 # Get the recipe list
 recipe_list = scraper.get_recipes()
-
-# Now you can use recipe_list in this file
-for recipe in recipe_list:
-    print(recipe)
