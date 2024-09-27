@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 from recipe_repository import RecipeRepository
-from temp import RECIPES_LIST
+from parser import recipe_list
 
 COLLECTION_NAME = "recipes"
 DATABASE_NAME = "recipe_database"
@@ -18,9 +18,8 @@ def main():
     recipe_repository = RecipeRepository(recipes_collection)
     recipe_repository.delete_all()
 
-    # recipes_list = parser()
-    recipes_list = RECIPES_LIST
-    recipe_repository.add_all(recipes_list)
+    # recipes_list = recipes_list
+    recipe_repository.add_all(recipe_list)
 
     avg_ingredients = recipe_repository.average_number_of_ingredients()
     print(f"Average number of ingredients per recipe is {avg_ingredients}\n")
