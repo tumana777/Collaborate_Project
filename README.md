@@ -26,7 +26,7 @@ After storing the recipe data, the following useful statistics can be extracted 
 
 1. **Average Number of Ingredients**: Calculates the average number of ingredients across all stored recipes.
 2. **Average Number of Preparation Steps**: Finds the average number of preparation steps per recipe.
-3. **Recipe with the Most Servings**: Identifies and returns the recipe with the highest number of servings.
+3. **Recipe with the Most Servings**: Identifies the recipe with the highest number of servings, returning its title and url.
 4. **Author with the Most Recipes**: Determines which author has the most recipes published, returning their name and number of recipes.
 
 ## Project Structure

@@ -28,8 +28,7 @@ def main():
     print(f"\nAverage number of preparation steps per recipe is {avg_steps}.")
 
     recipe = recipe_repository.recipe_with_most_servings()
-    print(f"\nRecipe with most servings is {recipe.title}:")
-    print(recipe)
+    print(f"\nRecipe with most servings is {recipe.title} ({recipe.url}).")
 
     author, recipe_count = recipe_repository.author_with_most_recipes()
     print(f"\nAuthor with most recipes is {author} with {recipe_count} recipes.")
